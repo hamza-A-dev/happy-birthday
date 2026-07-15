@@ -97,7 +97,7 @@ for (let i = 0; i < 60; i++) {
 // COUNTDOWN
 // =============================
 
-const targetDate = new Date("July 16, 2026 12:00:00:AM").getTime();
+const targetDate = new Date(2026, 6, 16, 0, 0, 0).getTime();
 console.log(new Date(targetDate));
 let birthdayStarted = false;
 
