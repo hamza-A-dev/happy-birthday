@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Happy Birthday To Me ✨</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="set">
+        <div class="moon"></div>
+        <div id="shootingStars"></div>
+        <div id="fireflies"></div>
+        <div id="progressBar"></div>
+        <div class="cursor-glow"></div>
+
+        <!-- Loading Screen -->
+        <div id="loader">
+            <h1>Happy Birthday To Me 🎂</h1>
+        </div>
+
+        <!-- Animated Background -->
+        <!-- <div class="stars"></div> -->
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="date">16 July</p>
+
+                <h1 id="typing"></h1>
+
+                <p class="quote">
+                    Every journey begins with a dream.<br>
+                    Every line of code brings me closer to mine.
+                </p>
+
+                <button id="celebrateBtn">
+                    Let's Celebrate 🎉
+                </button>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="assets/images/img6_compressed.jpg" alt="Hamza">
+
+            </div>
+
+        </section>
+
+        <!-- COUNTDOWN -->
+
+        <section class="countdown">
+
+            <h2>Countdown To My Birthday 🎂</h2>
+
+            <div class="timer">
+
+                <div>
+                    <h1 id="days">00</h1>
+                    <span>Days</span>
+                </div>
+
+                <div>
+                    <h1 id="hours">00</h1>
+                    <span>Hours</span>
+                </div>
+
+                <div>
+                    <h1 id="minutes">00</h1>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <h1 id="seconds">00</h1>
+                    <span>Seconds</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+
+        <section class="gallery">
+
+            <h2 data-aos="fade-up">My Moments 📸</h2>
+
+            <div class="gallery-container">
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img1_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img2_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img3_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img4_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img5_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img6_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img7_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img8_compressed.jpg" loading="lazy">
+                </div>
+
+                <div class="card" data-aos="zoom-in">
+                    <img src="assets/images/img9_compressed.jpg" loading="lazy">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="slideshow">
+
+            <img id="slideImage" src="assets/images/img1_compressed.jpg">
+
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about">
+
+            <div class="about-left" data-aos="fade-right">
+
+                <img src="assets/images/img6_compressed.jpg" alt="Hamza">
+
+            </div>
+
+            <div class="about-right" data-aos="fade-left">
+
+                <h2>About Me</h2>
+
+                <h3>Hamza Awan</h3>
+
+                <p>
+
+                    I love travelling, photography and coding.
+                    Every day is a chance to learn something new,
+                    build something meaningful and move one step
+                    closer to my dreams.
+
+                </p>
+
+                <div class="hobbies">
+
+                    <span>💻 Coding</span>
+
+                    <span>📸 Photography</span>
+
+                    <span>🌍 Travelling</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= TIMELINE ================= -->
+
+        <section class="timeline">
+
+            <h2 data-aos="fade-up">My Journey 🚀</h2>
+
+            <div class="timeline-container">
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span>👶</span>
+                        <h3>Beginning</h3>
+                        <p>Every great story starts with a single step.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span>🏫</span>
+                        <h3>School Life</h3>
+                        <p>Years filled with learning, friendships and unforgettable memories.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span>💻</span>
+                        <h3>Coding Journey</h3>
+                        <p>Started turning ideas into websites and learning new technologies.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <span>🎂</span>
+                        <h3>16 July</h3>
+                        <p>A special day that reminds me how far I've come.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <span>🚀</span>
+                        <h3>Future</h3>
+                        <p>Building my dream career as a successful Software Engineer.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= FAVORITES ================= -->
+
+        <section class="favorites">
+
+            <h2 data-aos="fade-up">Things I Love ❤️</h2>
+
+            <div class="favorite-grid">
+
+                <div class="favorite-card" data-aos="zoom-in">
+                    <div class="icon">💻</div>
+                    <h3>Coding</h3>
+                    <p>Building creative websites and learning new technologies.</p>
+                </div>
+
+                <div class="favorite-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon">🚗</div>
+                    <h3>Driving</h3>
+                    <p>Long peaceful drives always refresh my mind.</p>
+                </div>
+
+                <div class="favorite-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon">📸</div>
+                    <h3>Photography</h3>
+                    <p>Capturing beautiful memories that last forever.</p>
+                </div>
+
+                <div class="favorite-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon">🌍</div>
+                    <h3>Travelling</h3>
+                    <p>Exploring new places and collecting unforgettable moments.</p>
+                </div>
+
+                <div class="favorite-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p>Entertainment, competition and lots of fun.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CAKE ================= -->
+
+        <section class="cake-section">
+
+            <h2 data-aos="fade-up">
+
+                Make A Wish 🎂
+
+            </h2>
+
+            <div class="cake">
+
+                <div class="candles">
+
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+                    <div class="candle"></div>
+
+                </div>
+
+                <div class="cake-top"></div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+            <button id="blowBtn">
+
+                💨 Blow Candles
+
+            </button>
+
+        </section>
+
+
+        <!-- MUSIC -->
+
+        <audio id="music" loop>
+            <source src="assets/music/lofi.mpeg" type="audio/mpeg">
+        </audio>
+
+        <button id="musicBtn">
+
+            🎵 Play Music
+
+        </button>
+
+        <!-- Boom -->
+        <audio id="boomSound" preload="auto">
+            <source src="assets/audio/boom.mp4" type="audio/mp4">
+        </audio>
+
+        <!-- Happy Birthday -->
+        <audio id="birthdaySong" preload="auto">
+            <source src="assets/audio/birthday.mp4" type="audio/mp4">
+        </audio>
+
+        <!-- ================= FIREWORKS ================= -->
+
+        <canvas id="fireworks"></canvas>
+
+        <div id="confetti"></div>
+        <!-- ================= PHOTO MODAL ================= -->
+
+        <div id="photoModal">
+
+            <span id="closeModal">&times;</span>
+
+            <img id="modalImage">
+
+        </div>
+        <!-- Floating Balloons -->
+        <div id="balloons"></div>
+        <!-- Rocket Intro -->
+
+        <div id="rocketIntro">
+
+            <div id="rocket">
+                🚀
+            </div>
+
+        </div>
+
+        <!-- ==========================
+        PREMIUM GIFT BOX
+        ========================== -->
+
+        <div id="giftOverlay">
+
+            <div class="giftScene">
+
+                <div class="giftGlow"></div>
+                <div class="flyingPhotos"></div>
+                <div class="spotlight"></div>
+                <div id="giftBox">
+
+                    <div class="giftShadow"></div>
+
+                    <div class="giftLid"></div>
+
+                    <div class="giftBody"></div>
+
+                    <div class="giftRibbonVertical"></div>
+
+                    <div class="giftRibbonHorizontal"></div>
+
+                </div>
+
+                <h2 id="giftTitle">
+                    A Special Surprise Awaits...
+                </h2>
+
+                <p id="giftHint">
+                    Click the Gift Box
+                </p>
+
+            </div>
+
+        </div>
+        <!-- ==========================
+          BIRTHDAY LETTER
+        ========================== -->
+
+        <div id="birthdayLetter">
+
+            <h1>💌 Happy Birthday!</h1>
+
+            <p id="letterText"></p>
+
+            <span id="typingCursor">|</span>
+
+            <button id="skipTyping">Skip ⏩</button>
+
+            <button id="continueBtn">
+                Continue →
+            </button>
+
+        </div>
+        <audio id="piano">
+            <source src="assets/audio/piano.mp4" type="audio/mp4">
+        </audio>
+        <!-- ===== Birthday Popup ===== -->
+
+        <div id="birthdayPopup" class="birthday-popup">
+
+            <div class="popup-card">
+
+                <h2>🎉 Happy Birthday Hamza 🎂</h2>
+
+                <p>
+                    May Allah bless you with endless happiness,
+                    success, good health and beautiful memories.
+                </p>
+
+                <h3>✨ Make A Wish ✨</h3>
+
+                <button id="popupContinueBtn">
+                    Continue ❤️
+                </button>
+
+            </div>
+
+        </div>
+        <button id="scrollTopBtn">
+            ↑
+        </button>
+        <!--==========================
+      FOOTER
+       ===========================-->
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <h2>Thank You For Visiting ❤️</h2>
+
+                <p>
+                    Every memory tells a story.
+                    Thank you for being a part of mine.
+                </p>
+
+                <div class="footer-line"></div>
+
+                <h3>Designed & Developed By</h3>
+
+                <span>Hamza Awan 💜</span>
+                <br>
+                <small>© 2026 | Happy Birthday Website</small>
+
+
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
