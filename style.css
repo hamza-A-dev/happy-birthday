@@ -41,7 +41,7 @@ body {
 #loader h1 {
     color: #b400ff;
     font-size: 2.2rem;
-    text-shadow: 0 0 10px #b400ff;
+    text-shadow: 0 0 10px #b400ff; 
     animation: pulse 1.4s infinite;
 }
 
@@ -3148,5 +3148,62 @@ FOOTER
         text-align:center;
 
     }
+
+}
+
+#startCelebration{
+
+    position:fixed;
+    inset:0;
+
+    background:#000;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+
+    z-index:99999999;
+
+    cursor:pointer;
+
+}
+
+#startCelebration h1{
+
+    color:#fff;
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+#startCelebration p{
+
+    color:#ffd700;
+
+    font-size:22px;
+
+    animation:blink 1.2s infinite;
+
+}
+
+@media(max-width:768px){
+
+#startCelebration h1{
+
+font-size:30px;
+
+}
+
+#startCelebration p{
+
+font-size:18px;
+
+}
 
 }

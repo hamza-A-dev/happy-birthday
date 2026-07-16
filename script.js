@@ -121,7 +121,9 @@ const countdown = setInterval(() => {
 
             birthdayStarted = true;
 
-            birthdayMode();
+            const startScreen = document.getElementById("startCelebration");
+
+            startScreen.style.display = "flex";
 
         }
 
@@ -1138,5 +1140,23 @@ for (let i = 0; i < 25; i++) {
     firefly.style.opacity = Math.random();
 
     fireflies.appendChild(firefly);
+
+}
+
+// ==========================
+// TAP TO START CELEBRATION
+// ==========================
+
+const startScreen = document.getElementById("startCelebration");
+
+if (startScreen) {
+
+    startScreen.addEventListener("click", () => {
+
+        startScreen.style.display = "none";
+
+        birthdayMode();
+
+    });
 
 }
